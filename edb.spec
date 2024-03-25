@@ -1,7 +1,7 @@
 Name:           edb
 Version:        1.5.0
 Release:        1%{?dist}
-Summary:        A debugger based on the ptrace API and Qt
+Summary:        A debugger based on the ptrace API and Qt, inspired by OllyDbg.
 
 License:        GPLv2+
 URL:            https://github.com/eteran/edb-debugger
@@ -27,16 +27,10 @@ Requires:       gdtoa-desktop
 ExclusiveArch:  %{ix86} x86_64
 
 %description
-edb a debugger based on the ptrace API.
-
-One of the main goals of this debugger is modularity.
-The interface is written in Qt and thus source portable to many platforms.
-The debugger core is a plugin and the platform specific code is isolated
-to just a few files, porting to a new OS would require porting these few
-files and implementing a plugin which implements the 
-DebuggerCoreInterface interface. Also, because the plugins are based
-on the QPlugin API, and do their work through the DebuggerCoreInterface
-object, they are almost always portable with just a simple recompile.
+edb is a cross-platform AArch32/x86/x86-64 debugger. It was inspired by OllyDbg,
+but aims to function on AArch32, x86, and x86-64 as well as multiple OS's.
+The functionality of the application can be extended with QtPlugin-based
+plugins.
 
 
 %prep
