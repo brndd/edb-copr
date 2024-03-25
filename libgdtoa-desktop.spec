@@ -5,7 +5,7 @@
 %global     commit      698924a1637897a1a78377e082bb0066696a6b34
 %global     shortcommit %(c=%{commit}; echo ${c:0:7})
 
-Name:       gdtoa-desktop
+Name:       libgdtoa-desktop
 Version:    0.1.20180730^%{gitdate}g%{shortcommit}
 Release:    1%{?dist}
 Summary:    Binary-decimal floating-point conversion library
