@@ -17,11 +17,11 @@ BuildRequires:  cmake
 BuildRequires:  boost-devel
 BuildRequires:  capstone-devel
 BuildRequires:  qt5-linguist
-BuildRequires:  libgdtoa-desktop-devel
+BuildRequires:  gdtoa-desktop-devel
 Requires:       qt5-linguist
 Requires:       qt5-qtxmlpatterns
 Requires:       qt5-qtsvg
-Requires:       libgdtoa-desktop
+Requires:       gdtoa-desktop
 
 # as edb is an x86 debugger
 ExclusiveArch:  %{ix86} x86_64
